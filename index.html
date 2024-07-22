@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!-- Declara que este documento é um documento HTML5 -->
+<html lang="pt-br"> <!-- Início do documento HTML, especificando o idioma como Português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, que suporta a maioria dos caracteres internacionais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define as configurações de viewport para otimizar a visualização em dispositivos móveis -->
+    <title>Tabuada Blitz</title> <!-- Define o título da página que aparecerá na aba do navegador -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Inclui o arquivo CSS externo para estilizar a página -->
+</head>
+<body>
+    <div class="game-container"> <!-- Div que contém todos os elementos do jogo, estilizada com a classe "game-container" -->
+        <h1>Tabuada Blitz</h1>  <!-- Cabeçalho principal da página com o nome do jogo -->
+        <select id="operation"> <!-- Menu suspenso para selecionar a operação matemática -->
+            <option value="adicao">Adição</option> <!-- Opção para adição -->
+            <option value="subtracao">Subtração</option> <!-- Opção para subtração -->
+            <option value="multiplicacao">Multiplicação</option> <!-- Opção para multiplicação -->
+            <option value="divisao">Divisão</option> <!-- Opção para divisão -->
+            <option value="potenciacao">Potenciação</option> <!-- Opção para potenciação -->
+            <option value="radiciacao">Radiciação</option> <!-- Opção para radiciação -->
+        </select> 
+        <p id="level">Nível: </p> <!-- Parágrafo para exibir o nível atual do jogo -->
+        <p id="question"></p> <!-- Parágrafo para exibir a pergunta atual do jogo -->
+        <div id="answers"></div> <!-- Div para exibir as opções de resposta -->
+        <p id="timer"></p> <!-- Parágrafo para exibir o temporizador -->
+        <p id="result"></p> <!-- Parágrafo para exibir o resultado do nível ou do jogo -->
+        <button id="start-btn">Iniciar Jogo</button> <!-- Botão para iniciar o jogo -->
+        <button id="stop-btn" class="hidden">Parar Jogo</button> <!-- Botão para parar o jogo, inicialmente oculto -->
+        
+        <footer> <!-- Rodapé da página -->
+            <p>Diego Nascimento - Analista e Desenvolvedor de Sistemas</p> <!-- Informações sobre o desenvolvedor -->
+            <p>
+                <a href="https://github.com/DVALENASCIMENTO" target="_blank">GitHub</a> | <!-- Link para o perfil do GitHub -->
+                <a href="https://www.linkedin.com/in/diego-vale-do-nascimento-48212215b/" target="_blank">LinkedIn</a> <!-- Link para o perfil do LinkedIn -->
+            </p>
+        </footer>
+    </div>
+    
+    <script src="js/script.js"></script> <!-- Inclui o arquivo JavaScript externo para adicionar funcionalidade ao jogo -->
+</body>
+</html>
