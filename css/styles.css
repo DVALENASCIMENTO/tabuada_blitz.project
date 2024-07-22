@@ -1,0 +1,201 @@
+body {
+    display: flex; /* Define que o corpo da página usa o layout flexível */
+    justify-content: center; /* Alinha horizontalmente o conteúdo no centro */
+    align-items: center; /* Alinha verticalmente o conteúdo no centro */
+    height: 100vh; /* Define a altura do corpo como 100% da altura da janela de visualização */
+    margin: 0; /* Remove a margem padrão do corpo */
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão como Roboto e, se não disponível, usa uma fonte sans-serif */
+    background-color: #282c34; /* Define a cor de fundo como um tom escuro */
+    color: #ffffff; /* Define a cor do texto como branco */
+}
+
+.game-container {
+    text-align: center; /* Alinha o texto dentro da div ao centro */
+    background: #1c1f26; /* Define o fundo da div como um tom escuro diferente do corpo */
+    padding: 30px; /* Adiciona um preenchimento de 30 pixels ao redor do conteúdo da div */
+    border-radius: 10px; /* Define bordas arredondadas de 10 pixels */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao redor da div com deslocamento e desfoque */
+    width: 100%; /* Define a largura da div como 100% do contêiner pai */
+    max-width: 500px; /* Define a largura máxima da div como 500 pixels */
+}
+
+h1 {
+    font-size: 2.5em; /* Define o tamanho da fonte como 2.5 vezes o tamanho da fonte base */
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels */
+    color: #61dafb; /* Define a cor do texto como um tom de azul claro */
+    animation: bounce 1s infinite; /* Aplica uma animação de "bounce" que dura 1 segundo e se repete infinitamente */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Define o estado inicial e final da animação com a posição original */
+    }
+    40% {
+        transform: translateY(-30px); /* Move o elemento para cima 30 pixels */
+    }
+    60% {
+        transform: translateY(-15px); /* Move o elemento para cima 15 pixels */
+    }
+}
+
+h2 {
+    font-size: 1.8em; /* Define o tamanho da fonte como 1.8 vezes o tamanho da fonte base */
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels */
+}
+
+#level {
+    font-size: 1.5em; /* Define o tamanho da fonte como 1.5 vezes o tamanho da fonte base */
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels */
+}
+
+#question {
+    font-size: 2.5em; /* Define o tamanho da fonte como 2.5 vezes o tamanho da fonte base */
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels */
+}
+
+#operation-selector {
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels */
+    font-size: 1.2em; /* Define o tamanho da fonte como 1.2 vezes o tamanho da fonte base */
+    color: #ffffff; /* Define a cor do texto como branco */
+}
+
+#operation-selector label {
+    margin-right: 10px; /* Adiciona uma margem direita de 10 pixels aos rótulos dentro do seletor de operações */
+}
+
+#operation {
+    font-size: 1em; /* Define o tamanho da fonte como o tamanho da fonte base */
+    padding: 5px; /* Adiciona um preenchimento de 5 pixels ao redor do conteúdo do seletor */
+    border-radius: 5px; /* Define bordas arredondadas de 5 pixels */
+    border: 1px solid #61dafb; /* Adiciona uma borda sólida de 1 pixel com a cor azul claro */
+    background-color: #282c34; /* Define a cor de fundo como um tom escuro */
+    color: #ffffff; /* Define a cor do texto como branco */
+}
+
+#answers {
+    display: flex; /* Define que o contêiner usa o layout flexível */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    gap: 10px; /* Define um espaço de 10 pixels entre os itens */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+}
+
+#answers button {
+    font-size: 1.5em; /* Define o tamanho da fonte como 1.5 vezes o tamanho da fonte base */
+    padding: 10px 20px; /* Adiciona um preenchimento de 10 pixels no topo e na base e 20 pixels nas laterais */
+    border: none; /* Remove a borda padrão dos botões */
+    border-radius: 5px; /* Define bordas arredondadas de 5 pixels */
+    cursor: pointer; /* Altera o cursor para uma mão quando passa sobre o botão */
+    background-color: #61dafb; /* Define a cor de fundo como um tom de azul claro */
+    color: #282c34; /* Define a cor do texto como um tom escuro */
+    transition: background-color 0.3s, transform 0.3s; /* Define uma transição suave para alterações na cor de fundo e transformação */
+}
+
+#answers button:hover {
+    background-color: #21a1f1; /* Altera a cor de fundo quando o botão é passado com o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão em 5% quando o mouse está sobre ele */
+}
+
+button.correct {
+    background-color: #2ecc71; /* Verde para resposta correta */
+    color: #ffffff; /* Define a cor do texto como branco */
+}
+
+button.incorrect {
+    background-color: #e74c3c; /* Vermelho para resposta errada */
+    color: #ffffff; /* Define a cor do texto como branco */
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0; /* Torna o elemento invisível no meio da animação */
+    }
+}
+
+.blink {
+    animation: blink 1s step-start infinite; /* Aplica a animação de piscar que dura 1 segundo e se repete infinitamente */
+}
+
+#timer {
+    margin-top: 20px; /* Adiciona uma margem superior de 20 pixels */
+    font-size: 1.2em; /* Define o tamanho da fonte como 1.2 vezes o tamanho da fonte base */
+    color: #2ecc71; /* Verde inicial para o temporizador */
+    transition: color 0.3s; /* Define uma transição suave para alterações na cor */
+}
+
+#start-btn, #result {
+    margin-top: 20px; /* Adiciona uma margem superior de 20 pixels */
+    font-size: 1.2em; /* Define o tamanho da fonte como 1.2 vezes o tamanho da fonte base */
+    padding: 10px 20px; /* Adiciona um preenchimento de 10 pixels no topo e na base e 20 pixels nas laterais */
+    border: none; /* Remove a borda padrão dos botões */
+    border-radius: 5px; /* Define bordas arredondadas de 5 pixels */
+    cursor: pointer; /* Altera o cursor para uma mão quando passa sobre o botão */
+    background-color: #61dafb; /* Define a cor de fundo como um tom de azul claro */
+    color: #282c34; /* Define a cor do texto como um tom escuro */
+    transition: background-color 0.3s, transform 0.3s; /* Define uma transição suave para alterações na cor de fundo e transformação */
+}
+
+#start-btn:hover, #result:hover {
+    background-color: #21a1f1; /* Altera a cor de fundo quando o botão é passado com o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão em 5% quando o mouse está sobre ele */
+}
+
+.hidden {
+    display: none; /* Oculta o elemento definindo a propriedade de exibição como "none" */
+}
+
+footer {
+    margin-top: 20px; /* Adiciona uma margem superior de 20 pixels */
+    font-size: 0.8em; /* Define o tamanho da fonte como 0.8 vezes o tamanho da fonte base */
+    color: #aaa; /* Define a cor do texto como um cinza claro */
+}
+
+footer p {
+    margin: 5px 0; /* Adiciona uma margem superior e inferior de 5 pixels aos parágrafos no rodapé */
+}
+
+footer a {
+    color: #61dafb; /* Define a cor do texto dos links como um tom de azul claro */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: color 0.3s; /* Define uma transição suave para alterações na cor dos links */
+}
+
+footer a:hover {
+    color: #21a1f1; /* Altera a cor dos links quando o mouse está sobre eles */
+}
+
+#stop-btn {
+    font-size: 1.2em; /* Define o tamanho da fonte como 1.2 vezes o tamanho da fonte base */
+    padding: 10px 20px; /* Adiciona um preenchimento de 10 pixels no topo e na base e 20 pixels nas laterais */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Define bordas arredondadas de 5 pixels */
+    cursor: pointer; /* Altera o cursor para uma mão quando passa sobre o botão */
+    background-color: #e74c3c; /* Define a cor de fundo como vermelho */
+    color: #ffffff; /* Define a cor do texto como branco */
+    transition: background-color 0.3s ease; /* Define uma transição suave para alterações na cor de fundo */
+    margin-left: 10px; /* Adiciona uma margem esquerda de 10 pixels */
+}
+
+#stop-btn:hover {
+    background-color: #c0392b; /* Altera a cor de fundo para um tom mais escuro de vermelho quando o mouse está sobre o botão */
+}
+
+.hidden {
+    display: none; /* Oculta o elemento definindo a propriedade de exibição como "none" */
+}
+
+#question {
+    font-size: 1.5em; /* Define o tamanho da fonte como 1.5 vezes o tamanho da fonte base */
+}
+
+sup {
+    font-size: 0.75em; /* Define o tamanho da fonte como 0.75 vezes o tamanho da fonte base */
+    vertical-align: super; /* Alinha verticalmente o texto como sobrescrito */
+}
+
+/* Estilos para responsividade */
+@media (min-width: 768px) {
+    /* Para dispositivos com largura mínima de 768px (tablet e desktop) */
+    #answers {
+        flex-direction: row; /* Muda os botões para a linha em telas maiores */
+    }
+}
