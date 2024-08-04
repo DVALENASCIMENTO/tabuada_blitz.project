@@ -8,15 +8,13 @@
 
 Você pode experimentar o jogo ao vivo clicando no link abaixo:
 
-[Tabuada Blitz - Jogo Online](https://seu-deploy-url.com)
-
-> *Substitua `https://seu-deploy-url.com` pelo URL real do seu deploy.*
+[Tabuada Blitz - Jogo Online]([https://seu-deploy-url.com](https://dvalenascimento.github.io/tabuada_blitz.project/))
 
 ## 📦 Repositório
 
 O código-fonte do projeto está disponível no GitHub. Você pode acessar o repositório, baixar o código e contribuir para o projeto através do link abaixo:
 
-[Repositório do Tabuada Blitz no GitHub](https://github.com/DVALENASCIMENTO/tabuada-blitz)
+[Repositório do Tabuada Blitz no GitHub](https://github.com/DVALENASCIMENTO/tabuada_blitz.project)
 
 ## 🛠 Tecnologias Utilizadas
 
