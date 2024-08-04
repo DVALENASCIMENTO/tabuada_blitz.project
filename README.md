@@ -8,7 +8,7 @@
 
 Você pode experimentar o jogo ao vivo clicando no link abaixo:
 
-https://seu-deploy-url.com](https://dvalenascimento.github.io/tabuada_blitz.project/
+https://dvalenascimento.github.io/tabuada_blitz.project/
 
 ## 📦 Repositório
 
